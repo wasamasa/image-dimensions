@@ -1,0 +1,5 @@
+((synopsis "Detect image dimensions for common formats")
+ (author "Vasilij Schneidermann")
+ (license "MIT")
+ (category graphics)
+ (test-depends test))

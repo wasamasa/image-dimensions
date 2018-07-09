@@ -1,0 +1,7 @@
+(compile -s -J -O3 -d1 "image-dimensions.scm")
+(compile -s "image-dimensions.import.scm")
+
+(install-extension
+ 'image-dimensions
+ '("image-dimensions.so" "image-dimensions.import.so")
+ '((version "0.1")))
