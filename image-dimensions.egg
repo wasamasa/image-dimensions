@@ -1,0 +1,8 @@
+((synopsis "Detect image dimensions for common formats")
+ (author "Vasilij Schneidermann")
+ (license "MIT")
+ (category graphics)
+ (dependencies srfi-1)
+ (test-dependencies test)
+ (components (extension image-dimensions
+                        (csc-options "-O3" "-d1"))))

@@ -1,4 +1,10 @@
-(use image-dimensions test)
+(import scheme)
+(cond-expand
+ (chicken-4
+  (use image-dimensions test))
+ (chicken-5
+  (import image-dimensions)
+  (import test)))
 
 (test-group "GIF"
   (test '(gif 10 20 0) (call-with-input-file "10x20.gif" image-info))
